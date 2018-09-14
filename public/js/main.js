@@ -21,15 +21,6 @@ $(document).ready(function() {
   downloadFile = function() {
     $.ajax('/api/file', {
       success: function(response) {
-        console.log('Got');
-        console.log(response);
-
-        // var url = window.URL.createObjectURL(response.csv);
-        // var a = document.createElement('a');
-        // a.href = url;
-        // a.download = 'myfile.txt';
-        // a.click();
-        // window.URL.revokeObjectURL(url);
 
         download(response.csv, 'myfile.txt', 'txt')
 
