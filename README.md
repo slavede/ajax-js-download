@@ -1,5 +1,5 @@
 # ajax-js-download
-Example how to save file from content (which is also base64 encoded).
+Example how to save file from content
 
 Implemented based on https://stackoverflow.com/a/30832210/867281 as a proof of concept.
 
