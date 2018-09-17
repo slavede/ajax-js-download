@@ -42,12 +42,12 @@ $(document).ready(function() {
     fileReader.onload = function(e) {
       var contents = e.target.result;
 
-      console.log(contents);
+      // console.log(contents);
 
       $.ajax('/api/file', {
         method: 'POST',
         data: JSON.stringify({
-          csv: 'content'
+          csv: content
         }),
         headers: {
           'content-type': 'application-json'
