@@ -47,7 +47,7 @@ $(document).ready(function() {
       $.ajax('/api/file', {
         method: 'POST',
         data: JSON.stringify({
-          csv: content
+          csv: contents
         }),
         headers: {
           'content-type': 'application-json'
