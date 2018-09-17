@@ -12,4 +12,10 @@ router.get('/api/file', (req, res) => {
   });
 });
 
+router.post('/api/file', (req, res) => {
+  res.json({
+    body: req.body
+  })
+})
+
 module.exports = router;
